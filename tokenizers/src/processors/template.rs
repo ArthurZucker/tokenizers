@@ -565,7 +565,7 @@ impl TemplateProcessing {
 
                             let encoding = Encoding::new(
                                 tok.ids.clone(),
-                                std::iter::repeat(*type_id).take(len).collect(),
+                                std::iter::repeat_n(*type_id, len).collect(),
                                 tok.tokens.clone(),
                                 // words
                                 std::iter::repeat(None).take(len).collect(),
