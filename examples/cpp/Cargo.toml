@@ -1,0 +1,13 @@
+[package]
+name = "tokenizers-cpp"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+tokenizers = { path = "../../tokenizers" }
+
+[build-dependencies]
+cbindgen = "0.26"
